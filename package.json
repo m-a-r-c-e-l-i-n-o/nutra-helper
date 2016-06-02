@@ -1,0 +1,35 @@
+{
+  "name": "nutra-helper",
+  "version": "0.0.7",
+  "description": "The \"nutra-helper\" module is a collection of helper methods used in core and external plugins of \"N.U.T.R.A.\" unit test runner.",
+  "main": "dist/nutra-helper.js",
+  "scripts": {
+    "test": "test",
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-a-r-c-e-l-i-n-o/nutra-helper.git"
+  },
+  "keywords": [
+    "N.U.T.R.A.",
+    "node",
+    "unit",
+    "test",
+    "testing"
+  ],
+  "author": "m-a-r-c-e-l-i-n-o <me@marceli.no>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m-a-r-c-e-l-i-n-o/nutra-helper/issues"
+  },
+  "homepage": "https://github.com/m-a-r-c-e-l-i-n-o/nutra-helper#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2016": "^6.0.11"
+  },
+  "dependencies": {
+    "rimraf": "^2.5.2"
+  }
+}
