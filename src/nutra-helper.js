@@ -1,8 +1,10 @@
 import Fs from 'fs'
 import Path from 'path'
 import Rimraf from 'rimraf'
+import _ from 'lodash'
 
 var Public = {
+    _,
     getPathPastCWD (file) {
         return file.replace(Path.join(process.cwd(), '/'), '')
     },
