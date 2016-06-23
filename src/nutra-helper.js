@@ -1,6 +1,7 @@
 import Fs from 'fs'
 import Path from 'path'
 import Rimraf from 'rimraf'
+import Mkdirp from 'mkdirp'
 import _ from 'lodash'
 
 var Public = {
@@ -24,10 +25,7 @@ var Public = {
         return newObject
     },
     makeDirectory (dir) {
-        if (!Fs.existsSync(dir)) {
-            Fs.mkdirSync(dir)
-        }
-        return dir
+        Mkdirp.sync(dir)
     },
     removeDirectory (dir) {
         Rimraf.sync(dir)
