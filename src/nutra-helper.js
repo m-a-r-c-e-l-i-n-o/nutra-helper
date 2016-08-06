@@ -7,10 +7,10 @@ import _ from 'lodash'
 var Public = {
     _,
     getPathPastCWD (file) {
-        return file.replace(Path.join(process.cwd(), '/'), '')
+        return file.replace(Path.normalize(process.cwd() + '/'), '')
     },
     getFileKey (filename) {
-        return this.getPathPastCWD(filename).replace(/\//g, '|')
+        return this.getPathPastCWD(filename).replace(/\\|\//g, '|')
     },
     cloneObject (object, immutable) {
         var newObject = Object.assign({}, object)

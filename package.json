@@ -1,6 +1,6 @@
 {
   "name": "nutra-helper",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "The \"nutra-helper\" module is a collection of helper methods used in core and external plugins of \"N.U.T.R.A.\" unit test runner.",
   "main": "dist/nutra-helper.js",
   "scripts": {
